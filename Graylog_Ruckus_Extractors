@@ -1,0 +1,257 @@
+{
+  "extractors": [
+    {
+      "title": "AP Name",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 6,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apName",
+      "extractor_config": {
+        "regex_value": "\\\"apName\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apName"
+    },
+    {
+      "title": "SSID",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 4,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "ssid",
+      "extractor_config": {
+        "regex_value": "\\\"ssid\\\"=\\\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "ssid"
+    },
+    {
+      "title": "AP GPS",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 7,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apGps",
+      "extractor_config": {
+        "regex_value": "\\\"apGps\\\"=\\\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apGps"
+    },
+    {
+      "title": "AP Event",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apEvent",
+      "extractor_config": {
+        "regex_value": "\\@@(.+?)\\b"
+      },
+      "condition_type": "string",
+      "condition_value": "@@"
+    },
+    {
+      "title": "AP Event Type",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 1,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apEventType",
+      "extractor_config": {
+        "regex_value": "\\,(.+?),"
+      },
+      "condition_type": "string",
+      "condition_value": "@@"
+    },
+    {
+      "title": "AP MAC Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 2,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apMac",
+      "extractor_config": {
+        "regex_value": "\\\"apMac\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apMac"
+    },
+    {
+      "title": "Client MAC Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 3,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "clientMac",
+      "extractor_config": {
+        "regex_value": "\\\"clientMac\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "clientMac"
+    },
+    {
+      "title": "Username",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 9,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "userName",
+      "extractor_config": {
+        "regex_value": "\\\"userName\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "userName"
+    },
+    {
+      "title": "Client IP Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 8,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "clientIP",
+      "extractor_config": {
+        "regex_value": "\\\"clientIP\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "clientIP"
+    },
+    {
+      "title": "VLAN ID",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 10,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "vlanId",
+      "extractor_config": {
+        "regex_value": "\\\"vlanId\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "vlanId"
+    },
+    {
+      "title": "AP Model",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 13,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apModel",
+      "extractor_config": {
+        "regex_value": "\\\"model\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "model"
+    },
+    {
+      "title": "Firmware Version",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 12,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "firmwareVersion",
+      "extractor_config": {
+        "regex_value": "\\\"fwVersion\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "fwVersion"
+    },
+    {
+      "title": "AP Location",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 14,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apLocation",
+      "extractor_config": {
+        "regex_value": "\\\"apLocation\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apLocation"
+    },
+    {
+      "title": "AP IP Address",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 15,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apIpAddress",
+      "extractor_config": {
+        "regex_value": "\\\"apIpAddress\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apIpAddress"
+    },
+    {
+      "title": "AP Serial Number",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 16,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "serialNumber",
+      "extractor_config": {
+        "regex_value": "\\\"serialNumber\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "serialNumber"
+    },
+    {
+      "title": "AP Description",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 17,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "apDescription",
+      "extractor_config": {
+        "regex_value": "\\\"apDescription\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "apDescription"
+    },
+    {
+      "title": "Client OS Type",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 5,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "clientOsType",
+      "extractor_config": {
+        "regex_value": "\\\"osType\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "osType"
+    },
+    {
+      "title": "Signal Strength",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 11,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "signalStrength",
+      "extractor_config": {
+        "regex_value": "\\\"rssi\\\"=\"(.+?)\\\""
+      },
+      "condition_type": "string",
+      "condition_value": "rssi"
+    }
+  ],
+  "version": "4.3.11"
+}
